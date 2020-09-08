@@ -16,10 +16,14 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build -l 8080",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "yarn test:lint && yarn test:types && yarn test:unit",
+    "test:watch": "react-scripts test",
+    "test:lint": "eslint . --ext .js,.ts,.tsx --cache",
+    "test:types": "tsc --noEmit",
+    "test:unit": "react-scripts test --watchAll=false"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,7 +53,7 @@
     "@types/react-router-dom": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^4.1.0",
     "cz-emoji": "^1.2.2",
-    "eslint": "^7.8.1",
+    "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.0",

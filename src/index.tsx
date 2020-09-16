@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
 import './index.scss';
 import './modules/internationalization/service/i18n.service';
+import { MainNavigator } from './modules/navigation/pages';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MainNavigator />
   </React.StrictMode>,
   document.getElementById('root')
 );

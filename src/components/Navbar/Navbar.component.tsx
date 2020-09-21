@@ -1,50 +1,46 @@
 import React, { FunctionComponent } from 'react';
+import { useTranslation } from 'react-i18next';
+import { PATHS } from '../../modules/navigation/services';
 import city from './../../assets/city-hall.png';
 import home from './../../assets/home.png';
 import logo from './../../assets/logo.png';
 import timetable from './../../assets/timetable.png';
 import './Navbar.style.scss';
 
-const SideBarData = [
+const TAILLE_IMG = 64;
+const TAILLE_LOGO = 256;
+const sideBarDatas = [
   {
-    title: 'Accueil',
-    path: '/',
-    cName: 'nav-text',
+    title: 'navbar.home',
+    path: PATHS.ROOT_PAGE.ROUTE,
+    image: home,
   },
   {
-    title: 'Evenement',
-    path: '/evenement',
-    cName: 'nav-text',
+    title: 'navbar.events',
+    path: PATHS.EVENT_PAGE.ROUTE,
+    image: timetable,
   },
   {
-    title: 'Vie Etudiante',
-    path: 'vie_etudiante',
-    cName: 'nav-text',
+    title: 'navbar.studentLife',
+    path: PATHS.STUDENT_LIFE_PAGE.ROUTE,
+    image: city,
   },
 ];
 
 export const Navbar: FunctionComponent = () => {
+  const { t } = useTranslation();
+
   return (
-    <nav>
-      <img className="logo" src={logo} height="256" width="256"></img>
-      <li className="nav-text">
-        <a href="/">
-          <img src={home} height="64" width="64"></img>
-          <span>Accueil</span>
-        </a>
-      </li>
-      <li className="nav-text">
-        <a href="/evenement">
-          <img src={timetable} height="64" width="64"></img>
-          <span>Evenement</span>
-        </a>
-      </li>
-      <li className="nav-text">
-        <a href="/vie_etudiante">
-          <img src={city} height="64" width="64"></img>
-          <span>Vie Etudiante</span>
-        </a>
-      </li>
-    </nav>
+    <div className="header">
+      <img className="etu-logo" src={logo} height={TAILLE_LOGO} width={TAILLE_LOGO}></img>
+      <nav>
+        {sideBarDatas.map(({ title, path, image }) => (
+          <a key={title} href={path} className="nav-text">
+            <img className="nav-logo" src={image} height={TAILLE_IMG} width={TAILLE_IMG} />
+            <span>{t(title)}</span>
+          </a>
+        ))}
+      </nav>
+    </div>
   );
 };

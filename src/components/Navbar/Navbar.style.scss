@@ -1,20 +1,14 @@
-.nav {
-}
 .nav-text {
   display: flex;
-  height: 60px;
-  text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
+  margin-top: 50px;
+  align-items: center;
 }
-li {
-  margin: 0px 0px 60px;
+.nav-logo {
+  margin-right: 20px;
+  margin-left: 20px;
 }
-
-span {
-  color: white;
-  margin-left: 25px;
-}
-img {
+.etu-logo {
   margin-left: 20px;
 }

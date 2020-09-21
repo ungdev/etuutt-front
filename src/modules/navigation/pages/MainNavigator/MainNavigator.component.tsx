@@ -14,10 +14,10 @@ export const MainNavigator: FunctionComponent = () => {
           <Route exact path={PATHS.ROOT_PAGE.ROUTE}>
             <HomePage />
           </Route>
-          <Route exact path="/evenement">
+          <Route exact path={PATHS.EVENT_PAGE.ROUTE}>
             <EventPage />
           </Route>
-          <Route exact path="/vie_etudiante">
+          <Route exact path={PATHS.STUDENT_LIFE_PAGE.ROUTE}>
             <LifeStudentPage />
           </Route>
           <Route path="*">

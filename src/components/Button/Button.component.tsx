@@ -1,5 +1,9 @@
 import React, { FunctionComponent } from 'react';
 
-export const Button: FunctionComponent = (name, img) => {
-  return <button>Connection</button>;
+interface ButtonProps {
+  title: string;
+}
+
+export const Button: FunctionComponent<ButtonProps> = ({ title }) => {
+  return <button className="button">{title}</button>;
 };

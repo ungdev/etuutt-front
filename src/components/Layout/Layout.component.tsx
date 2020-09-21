@@ -5,9 +5,7 @@ import './Layout.style.scss';
 export const Layout: FunctionComponent = ({ children }) => {
   return (
     <div className="layout">
-      <div className="header">
-        <Navbar></Navbar>
-      </div>
+      <Navbar />
       <div className="content">{children}</div>
     </div>
   );

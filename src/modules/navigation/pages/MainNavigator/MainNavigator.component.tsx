@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout } from '../../../../components';
 import { EventPage } from '../../../Event/pages';
 import { HomePage } from '../../../home/pages';
-import { LifeStudentPage } from '../../../life_student/pages';
+import { StudentLifePage } from '../../../studentLife/pages';
 import { PATHS } from '../../services';
 
 export const MainNavigator: FunctionComponent = () => {
@@ -18,7 +18,7 @@ export const MainNavigator: FunctionComponent = () => {
             <EventPage />
           </Route>
           <Route exact path={PATHS.STUDENT_LIFE_PAGE.ROUTE}>
-            <LifeStudentPage />
+            <StudentLifePage />
           </Route>
           <Route path="*">
             <div>404</div>

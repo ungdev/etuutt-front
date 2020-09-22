@@ -1,3 +1,5 @@
 {
-  "test": "Ceci est un test"
+  "navbar.events": "Evènements",
+  "navbar.home": "Accueil",
+  "navbar.studentLife": "Vie Etudiante"
 }

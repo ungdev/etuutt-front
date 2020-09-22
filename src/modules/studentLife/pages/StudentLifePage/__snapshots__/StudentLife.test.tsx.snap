@@ -1,74 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders app correctly 1`] = `
+exports[`[Component] StudentLifePage renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="App"
-      >
-        <header
-          class="App-header"
-        >
-          <img
-            alt="logo"
-            class="App-logo"
-            src="logo.svg"
-          />
-          <p>
-            Edit 
-            <code>
-              src/App.tsx
-            </code>
-             and save to reload.
-          </p>
-          <p>
-            test
-          </p>
-          <a
-            class="App-link"
-            href="https://reactjs.org"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        Vie Etudiante yolo
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="App"
-    >
-      <header
-        class="App-header"
-      >
-        <img
-          alt="logo"
-          class="App-logo"
-          src="logo.svg"
-        />
-        <p>
-          Edit 
-          <code>
-            src/App.tsx
-          </code>
-           and save to reload.
-        </p>
-        <p>
-          test
-        </p>
-        <a
-          class="App-link"
-          href="https://reactjs.org"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Vie Etudiante yolo
     </div>
   </div>,
   "debug": [Function],

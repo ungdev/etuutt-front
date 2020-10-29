@@ -1,14 +1,6 @@
 .layout {
   display: flex;
-
-  background-color: red;
   height: 100%;
-  .header {
-    max-width: 300px;
-    flex: 1;
-    background-color: black;
-  }
-
   .content {
     flex: 1;
     background-color: white;

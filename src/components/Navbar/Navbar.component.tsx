@@ -5,10 +5,13 @@ import city from './../../assets/city-hall.png';
 import home from './../../assets/home.png';
 import logo from './../../assets/logo.png';
 import timetable from './../../assets/timetable.png';
+import rgpd from './../../assets/protection.png';
+import services from './../../assets/menu.png';
+import equipe from './../../assets/team.png';
+import bug from './../../assets/careful.png';
 import './Navbar.style.scss';
 
 const TAILLE_IMG = 64;
-const TAILLE_LOGO = 256;
 const sideBarDatas = [
   {
     title: 'navbar.home',
@@ -25,6 +28,26 @@ const sideBarDatas = [
     path: PATHS.STUDENT_LIFE_PAGE.ROUTE,
     image: city,
   },
+  {
+    title: 'Services',
+    path: PATHS.SERVICES.ROUTE,
+    image: services,
+  },
+  {
+    title: "L'équipe",
+    path: PATHS.TEAM.ROUTE,
+    image: equipe,
+  },
+  {
+    title: 'RGPD',
+    path: PATHS.GRPD.ROUTE,
+    image: rgpd,
+  },
+  {
+    title: 'Signaler un bug',
+    path: PATHS.BUG.ROUTE,
+    image: bug,
+  },
 ];
 
 export const Navbar: FunctionComponent = () => {
@@ -32,7 +55,7 @@ export const Navbar: FunctionComponent = () => {
 
   return (
     <div className="header">
-      <img className="etu-logo" src={logo} height={TAILLE_LOGO} width={TAILLE_LOGO}></img>
+      <img className="etu-logo" src={logo}></img>
       <nav>
         {sideBarDatas.map(({ title, path, image }) => (
           <a key={title} href={path} className="nav-text">

@@ -8,6 +8,18 @@ export const PATHS = {
   STUDENT_LIFE_PAGE: {
     ROUTE: '/vie_etudiante',
   },
+  SERVICES:{
+    ROUTE:'/services'
+  },
+  TEAM:{
+    ROUTE:'/equipe'
+  },
+  GRPD:{
+    ROUTE:'/rgpd'
+  },
+  BUG:{
+    ROUTE:'/signaler_un_bug'
+  }
 };
 
 export const getRouteWithParameters = (

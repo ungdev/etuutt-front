@@ -4,9 +4,13 @@
   &:hover {
     background-color: #008eca;
   }
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: white;
 }
 .button-small {
-  width: 48px;
+  width: 78px;
   height: 48px;
 }
 .button-medium {
@@ -24,6 +28,10 @@
   border-radius: 30px;
   width: 100px;
   height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: white;
   &:hover {
     background-color: #008eca;
   }

@@ -8,18 +8,21 @@ export const PATHS = {
   STUDENT_LIFE_PAGE: {
     ROUTE: '/vie_etudiante',
   },
-  SERVICES:{
-    ROUTE:'/services'
+  SERVICES: {
+    ROUTE: '/services',
   },
-  TEAM:{
-    ROUTE:'/equipe'
+  TEAM: {
+    ROUTE: '/equipe',
   },
-  GDPR:{
-    ROUTE:'/rgpd'
+  GDPR: {
+    ROUTE: '/rgpd',
   },
-  BUG:{
-    ROUTE:'/signaler_un_bug'
-  }
+  BUG: {
+    ROUTE: '/signaler_un_bug',
+  },
+  STYLEGUIDE: {
+    ROUTE: '/styleguide',
+  },
 };
 
 export const getRouteWithParameters = (

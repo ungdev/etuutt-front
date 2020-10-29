@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout } from '../../../../components';
+import { BugPage } from '../../../Bug/BugPage';
+import { StyleGuidePage } from '../../../Development/pages';
 import { EventPage } from '../../../Event/pages';
+import { GDPRPage } from '../../../GDPR/GDPRPage';
 import { HomePage } from '../../../home/pages';
 import { ServicePage } from '../../../services/ServicePage';
-import { TeamPage } from '../../../Team/TeamPage';
-import { GDPRPage } from '../../../GDPR/GDPRPage';
-import { BugPage } from '../../../Bug/BugPage';
-
 import { StudentLifePage } from '../../../studentLife/pages';
+import { TeamPage } from '../../../Team/TeamPage';
 import { PATHS } from '../../services';
 
 export const MainNavigator: FunctionComponent = () => {
@@ -36,6 +36,9 @@ export const MainNavigator: FunctionComponent = () => {
           </Route>
           <Route exact path={PATHS.BUG.ROUTE}>
             <BugPage />
+          </Route>
+          <Route exact path={PATHS.STYLEGUIDE.ROUTE}>
+            <StyleGuidePage />
           </Route>
           <Route path="*">
             <div>404</div>

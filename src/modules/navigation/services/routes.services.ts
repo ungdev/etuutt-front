@@ -14,7 +14,7 @@ export const PATHS = {
   TEAM:{
     ROUTE:'/equipe'
   },
-  GRPD:{
+  GDPR:{
     ROUTE:'/rgpd'
   },
   BUG:{

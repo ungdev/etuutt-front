@@ -40,7 +40,7 @@ const sideBarDatas = [
   },
   {
     title: 'RGPD',
-    path: PATHS.GRPD.ROUTE,
+    path: PATHS.GDPR.ROUTE,
     image: rgpd,
   },
   {

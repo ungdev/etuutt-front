@@ -28,7 +28,7 @@
 
 ### Prettier - Code formatter
 
-    Prettier formate the code at each save (CTRL + S)  to make it more readable. To make it work a each save you need to go on File->Preferences->Settings then type "Format On Save" and approuve it.
+    Prettier formate the code at each save (CTRL + S)  to make it more readable. To make it work at each save you need to go on File->Preferences->Settings then type "Format On Save" and approve it.
 
 ### Turbo Console Log
 

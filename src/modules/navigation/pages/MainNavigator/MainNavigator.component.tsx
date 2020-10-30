@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout } from '../../../../components';
-import { BugPage } from '../../../Bug/BugPage';
+import { BugPage } from '../../../Bug/pages/BugPage';
 import { StyleGuidePage } from '../../../Development/pages';
 import { EventPage } from '../../../Event/pages';
-import { GDPRPage } from '../../../GDPR/GDPRPage';
+import { GDPRPage } from '../../../GDPR/pages/GDPRPage';
 import { HomePage } from '../../../home/pages';
-import { ServicePage } from '../../../services/ServicePage';
+import { ServicePage } from '../../../services/pages/ServicePage';
 import { StudentLifePage } from '../../../studentLife/pages';
-import { TeamPage } from '../../../Team/TeamPage';
+import { TeamPage } from '../../../Team/pages/TeamPage';
 import { PATHS } from '../../services';
 
 export const MainNavigator: FunctionComponent = () => {

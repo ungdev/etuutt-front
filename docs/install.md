@@ -28,11 +28,15 @@
 
 ### Prettier - Code formatter
 
-    Prettier formate the code at each save (CTRL + S)  to make it more readable
+    Prettier formate the code at each save (CTRL + S)  to make it more readable. To make it work a each save you need to go on File->Preferences->Settings then type "Format On Save" and approuve it.
 
 ### Turbo Console Log
 
-    This extension make debugging much easier by automating the operation of writing meaningful log message.
+    This extension make debugging much easier by automating the operation of writing meaningful log message.To use it, you have to:
+    Selecting the variable which is the subject of the debugging and pressing ctrl + alt + L. The log message will be inserted in the next line relative to the selected variable like this:
+    "console.log("SelectedVariableEnclosingClassName -> SelectedVariableEnclosingFunctionName -> SelectedVariable", SelectedVariable)"
+
+    If you want to change the shortcup, go to File->Preferences->Keyboard Shortcups, then type "turboConsoleLog: displayLogMessage" and click on the pencil logo to change the key combination.
 
 ### Path Intellisense
 
@@ -40,7 +44,7 @@
 
 ### Color Highlight
 
-    Color Highlight is used for style file, it let you show the color you are using
+    Color Highlight is used to let you show the color you are using, everywhere you have a color code by coloring it, for example: #FF0000.
 
 ### TSLint
 
@@ -52,6 +56,6 @@
 
 ### GitLens — Git supercharged
 
--
+    GitLens simply helps you better understand code. Quickly glimpse into whom, why, and when a line or code block was changed. Jump back through history to gain further insights as to how and why the code evolved. Effortlessly explore the history and evolution of a codebase.
 
 ## Go back to [README](../README.md)

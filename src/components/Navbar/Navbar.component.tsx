@@ -11,42 +11,42 @@ import equipe from './../../assets/team.png';
 import bug from './../../assets/careful.png';
 import './Navbar.style.scss';
 
-const TAILLE_IMG = 64;
+const TAILLE_IMG = 40;
 const sideBarDatas = [
   {
     title: 'navbar.home',
     path: PATHS.ROOT_PAGE.ROUTE,
-    image: home,
+    icon: "nav-logo fas fa-home",
   },
   {
     title: 'navbar.events',
     path: PATHS.EVENT_PAGE.ROUTE,
-    image: timetable,
+    icon: "nav-logo far fa-calendar-alt",
   },
   {
     title: 'navbar.studentLife',
     path: PATHS.STUDENT_LIFE_PAGE.ROUTE,
-    image: city,
+    icon: "nav-logo fas fa-university",
   },
   {
     title: 'Services',
     path: PATHS.SERVICES.ROUTE,
-    image: services,
+    icon: "nav-logo fas fa-journal-whills",
   },
   {
     title: "L'équipe",
     path: PATHS.TEAM.ROUTE,
-    image: equipe,
+    icon: "nav-logo fas fa-laugh-beam",
   },
   {
     title: 'RGPD',
     path: PATHS.GDPR.ROUTE,
-    image: rgpd,
+    icon: "nav-logo fas fa-unlock",
   },
   {
     title: 'Signaler un bug',
     path: PATHS.BUG.ROUTE,
-    image: bug,
+    icon: "nav-logo fas fa-file-signature",
   },
 ];
 
@@ -57,9 +57,10 @@ export const Navbar: FunctionComponent = () => {
     <div className="header">
       <img className="etu-logo" src={logo}></img>
       <nav>
-        {sideBarDatas.map(({ title, path, image }) => (
+        {sideBarDatas.map(({ title, path, icon }) => (
           <a key={title} href={path} className="nav-text">
-            <img className="nav-logo" src={image} height={TAILLE_IMG} width={TAILLE_IMG} />
+            {/* <img className="nav-logo" src={image} height={TAILLE_IMG} width={TAILLE_IMG} /> */}
+            <i className={icon}></i>
             <span>{t(title)}</span>
           </a>
         ))}

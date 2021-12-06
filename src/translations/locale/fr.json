@@ -4,7 +4,8 @@
   "navbar.studentLife": "Vie Etudiante",
   "navbar.team": "L'équipe",
   "navbar.bug": "Signaler un bug",
-
+  
+  "page.profile": "Mon profil",
   "profile.button1": "Voir mon profil public",
   "profile.button2": "Modifier", 
   "profile.studentNum": "Numéro étudiant",
@@ -13,5 +14,6 @@
   "profile.subtitle.formation": "Ma formation",
   "profile.subtitle.association": "Mes associations",
 
-  "page.profile": "Mon profil"
+  "page.timetable": "Mon emploi du temps"
+
 }

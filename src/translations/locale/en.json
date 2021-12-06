@@ -5,6 +5,7 @@
   "navbar.team": "Team",
   "navbar.bug": "Report a bug", 
 
+  "page.profile": "My profile",
   "profile.button1": "See my public profile",
   "profile.button2": "Edit", 
   "profile.studentNum": "Student's num",
@@ -13,6 +14,5 @@
   "profile.subtitle.formation": "My formation",
   "profile.subtitle.association": "My community life",
 
-  "page.profile": "My profile"
-  
+  "page.timetable": "My schedule"
 }

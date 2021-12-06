@@ -5,6 +5,12 @@ export const PATHS = {
   EVENT_PAGE: {
     ROUTE: '/evenement',
   },
+  PROFILE_PAGE: {
+    ROUTE: '/profile',
+  },
+  TIMETABLE_PAGE: {
+    ROUTE: '/timetable',
+  },
   STUDENT_LIFE_PAGE: {
     ROUTE: '/vie_etudiante',
   },

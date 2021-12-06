@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Navbar } from '../Navbar';
+import { Navbar } from '../../Navbar';
 import './Layout.style.scss';
 
 export const Layout: FunctionComponent = ({ children }) => {

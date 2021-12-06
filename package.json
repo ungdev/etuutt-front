@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^4.6.3",
+    "antd": "^4.17.2",
     "classnames": "^2.2.6",
     "i18next": "^19.7.0",
     "i18next-browser-languagedetector": "^6.0.1",
@@ -64,7 +64,7 @@
     "prettier": "^2.1.1",
     "prettier-plugin-organize-imports": "^1.1.1",
     "react-test-renderer": "^16.13.1",
-    "typescript": "~3.7.2"
+    "typescript": "^4.0.0"
   },
   "config": {
     "commitizen": {

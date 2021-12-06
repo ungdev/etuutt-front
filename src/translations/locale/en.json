@@ -1,5 +1,18 @@
 {
   "navbar.events": "Events",
   "navbar.home": "Home",
-  "navbar.studentLife": "Student Life"
+  "navbar.studentLife": "Student Life",
+  "navbar.team": "Team",
+  "navbar.bug": "Report a bug", 
+
+  "profile.button1": "See my public profile",
+  "profile.button2": "Edit", 
+  "profile.studentNum": "Student's num",
+  "profile.studentUes": "Student's courses",
+  "profile.formation": "Formation",
+  "profile.subtitle.formation": "My formation",
+  "profile.subtitle.association": "My community life",
+
+  "page.profile": "My profile"
+  
 }

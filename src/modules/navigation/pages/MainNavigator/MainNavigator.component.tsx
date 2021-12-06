@@ -5,6 +5,7 @@ import { BugPage } from '../../../Bug/pages/BugPage';
 import { StyleGuidePage } from '../../../Development/pages';
 import { EventPage } from '../../../Event/pages';
 import { GDPRPage } from '../../../GDPR/pages/GDPRPage';
+import { CommunityLife } from '../../../communityLife/pages';
 import { HomePage } from '../../../home/pages';
 import { ServicePage } from '../../../services/pages/ServicePage';
 import { StudentLifePage } from '../../../studentLife/pages';
@@ -18,6 +19,9 @@ export const MainNavigator: FunctionComponent = () => {
         <Switch>
           <Route exact path={PATHS.ROOT_PAGE.ROUTE}>
             <HomePage />
+          </Route>
+          <Route exact path={PATHS.COMMUNITY_LIFE_PAGE.ROUTE}>
+            <CommunityLife />
           </Route>
           <Route exact path={PATHS.EVENT_PAGE.ROUTE}>
             <EventPage />

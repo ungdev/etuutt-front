@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import logo from './../../assets/logo.png';
 
 import 'antd/dist/antd.css';
-import { Menu } from 'antd';
+import { Menu, Button } from 'antd';
 import './Navbar.style.scss';
 
 //Ant Design Icons
@@ -109,56 +109,58 @@ const sideBarDatas = [
     }
   
 
-// const {  Layout, Menu, Breadcrumb  } = antd;
-// const {  UserOutlined, LaptopOutlined, NotificationOutlined  } = icons;
 
-// const { SubMenu } = Menu;
-// const { Header, Content, Sider } = Layout;
 
-// export const Navbar : FunctionComponent = () => {
-//   const { t } = useTranslation();
 
-//   return (
-//   <Layout>
-//     <Header className="header">
-//       <div className="logo" />
-//       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-//         <Menu.Item key="1">nav 1</Menu.Item>
-//         <Menu.Item key="2">nav 2</Menu.Item>
-//         <Menu.Item key="3">nav 3</Menu.Item>
-//       </Menu>
-//     </Header>
-//     <Layout>
-//       <Sider width={200} className="site-layout-background">
+// export class Navbar extends React.Component {
+//   state = {
+//     collapsed: false,
+//   };
+
+//   toggleCollapsed = () => {
+//     this.setState({
+//       collapsed: !this.state.collapsed,
+//     });
+//   };
+
+//   render() {
+//     return (
+//       <div style={{ width: 256 }}>
+//         <Button type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
+//           {React.createElement(this.state.collapsed ? HomeOutlined : HomeOutlined)}
+//         </Button>
 //         <Menu
-//           mode="inline"
 //           defaultSelectedKeys={['1']}
 //           defaultOpenKeys={['sub1']}
-//           style={{ height: '100%', borderRight: 0 }}
+//           mode="inline"
+//           theme="dark"
+//           inlineCollapsed={this.state.collapsed}
 //         >
-//           <SubMenu key="sub1" title="subnav 1">
-//             <Menu.Item key="1">option1</Menu.Item>
-//             <Menu.Item key="2">option2</Menu.Item>
-//             <Menu.Item key="3">option3</Menu.Item>
-//             <Menu.Item key="4">option4</Menu.Item>
+//           <Menu.Item key="1" icon={<CalendarOutlined />}>
+//             Option 1
+//           </Menu.Item>
+//           <Menu.Item key="2" icon={<BookOutlined />}>
+//             Option 2
+//           </Menu.Item>
+//           <Menu.Item key="3" icon={<AppstoreAddOutlined />}>
+//             Option 3
+//           </Menu.Item>
+//           <SubMenu key="sub1" icon={<TeamOutlined />} title="Navigation One">
+//             <Menu.Item key="5">Option 5</Menu.Item>
+//             <Menu.Item key="6">Option 6</Menu.Item>
+//             <Menu.Item key="7">Option 7</Menu.Item>
+//             <Menu.Item key="8">Option 8</Menu.Item>
 //           </SubMenu>
-//           <SubMenu key="sub2"  title="subnav 2">
-//             <Menu.Item key="5">option5</Menu.Item>
-//             <Menu.Item key="6">option6</Menu.Item>
-//             <Menu.Item key="7">option7</Menu.Item>
-//             <Menu.Item key="8">option8</Menu.Item>
-//           </SubMenu>
-//           <SubMenu key="sub3"  title="subnav 3">
-//             <Menu.Item key="9">option9</Menu.Item>
-//             <Menu.Item key="10">option10</Menu.Item>
-//             <Menu.Item key="11">option11</Menu.Item>
-//             <Menu.Item key="12">option12</Menu.Item>
+//           <SubMenu key="sub2" icon={<FileProtectOutlined />} title="Navigation Two">
+//             <Menu.Item key="9">Option 9</Menu.Item>
+//             <Menu.Item key="10">Option 10</Menu.Item>
+//             <SubMenu key="sub3" title="Submenu">
+//               <Menu.Item key="11">Option 11</Menu.Item>
+//               <Menu.Item key="12">Option 12</Menu.Item>
+//             </SubMenu>
 //           </SubMenu>
 //         </Menu>
-//       </Sider>
-      
-//     </Layout>
-//   </Layout>
-
-//   )
+//       </div>
+//     );
+//   }
 // }

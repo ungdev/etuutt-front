@@ -3,7 +3,7 @@ import { ProfileCard } from '../../../../components';
 import { InfoProfileBox } from '../../../../components';
 import { useTranslation } from 'react-i18next';
 
-var imageName = require("./IMG_8651.JPG")
+var imageName = require("./baby_cat.jpg")
 
 export const HomePage: FunctionComponent = () => {
   const { t } = useTranslation();

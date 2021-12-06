@@ -2,6 +2,9 @@ export const PATHS = {
   ROOT_PAGE: {
     ROUTE: '/',
   },
+  COMMUNITY_LIFE_PAGE: {
+    ROUTE: '/communityLife',
+  },
   EVENT_PAGE: {
     ROUTE: '/evenement',
   },

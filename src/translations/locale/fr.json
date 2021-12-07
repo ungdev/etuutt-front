@@ -14,6 +14,25 @@
   "profile.subtitle.formation": "Ma formation",
   "profile.subtitle.association": "Mes associations",
 
-  "page.timetable": "Mon emploi du temps"
+  "page.timetable": "Mon emploi du temps",
+  "timetable.day1": "Lundi",
+  "timetable.day2": "Mardi",
+  "timetable.day3": "Mercredi",
+  "timetable.day4": "Jeudi",
+  "timetable.day5": "Vendredi",
+  "timetable.day6": "Samedi",
+  "timetable.slot1": "8:00",
+  "timetable.slot2": "9:00",
+  "timetable.slot3": "10:00",
+  "timetable.slot4": "11:00",
+  "timetable.slot5": "12:00",
+  "timetable.slot6": "13:00",
+  "timetable.slot7": "14:00",
+  "timetable.slot8": "15:00",
+  "timetable.slot9": "16:00",
+  "timetable.slot10": "17:00",
+  "timetable.slot11": "18:00",
+  "timetable.slot12": "19:00",
+  "timetable.slot13": "20:00"
 
 }

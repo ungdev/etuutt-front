@@ -1,29 +1,45 @@
-@import './../../variables.scss';
-@import './../../index.scss';
+@import "./../../variables.scss";
+@import "./../../index.scss";
 
-.infoProfileBox {
-  display: flex;
-  width: 45%;
-  flex-direction: column;
-  position: relative;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-  margin: 1em 5%;
-  padding-bottom: 4px;
-  background-color: #fff;
+.timetable /* Le tableau en lui-même */ {
+  margin: auto; /* Centre le tableau */
+  border: 4px outset white; /* Bordure du tableau avec effet 3D (outset) */
+  border-collapse: collapse; /* Colle les bordures entre elles */
+  width: 90%;
+  height: 70%;
   border-radius: 10px;
-  overflow: hidden;
+  display: flex;
+  background-color: white;
+}
 
+.timetable.box {
+  background-color: white;
+  border-radius: 10px;
+}
 
-  .profileBox-content {
-    padding: 3em 1em;
-    flex: 1;
-    margin-left: 5% ;
-  }
+table {
+  width: 100%;
+  height: 100%;
+}
 
-  .profileBoxItem {
-    margin-top: 1.5em;
-  }
+th /* Les cellules d'en-tête */ {
+  background-color: white;
+  color: black;
+  font-size: 1.1em;
+  border: 1px solid rgb(168, 161, 161);
+  width: 14.2%;
+  text-align: center;
+  border-style: none;
+}
 
-  
+td /* Les cellules normales */ {
+  border: 1px solid rgb(168, 161, 161);
+  text-align: center; /* Tous les textes des cellules seront centrés*/
+  padding: 5px; /* Petite marge intérieure aux cellules pour éviter que le texte touche les bordures */
+  height: 7%;
+  border-style: none;
+}
+
+td.time {
+  width: 5%;
 }

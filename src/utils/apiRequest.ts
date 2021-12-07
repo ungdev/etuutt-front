@@ -9,7 +9,7 @@ class APIRequest {
     constructor(mode: boolean) {
         this.mode = mode
         this.pathUng = "https://api-etuutt-2020.dev.uttnetgroup.fr/"
-        this.pathDebug = "http://92.149.175.117:8000/"
+        this.pathDebug = "http://81.51.27.27:8000/"
     }
 
     async makeRequest(path: string) {
@@ -25,15 +25,16 @@ class APIRequest {
         try {
             const response = await axios.get(pathRequest, {
                 headers: {
-                    'accept': 'application/ld+json',
-                    'CAS-LOGIN': 'admin',
-                    'Access-Control-Allow-Origin': '*',
-                },
+                    // 'accept': 'application/ld+json',
+                    //'CAS-LOGIN': 'admin',
+                    'access-control-allow-origin': '*'
+                }
             });
             console.log(response);
+            console.log("it's workinnnnng !")
         } catch (exception) {
             //process.stderr.write("ERROR");
-            console.log("ERREURRRR")
+            console.log(exception)
         }
     }
 }

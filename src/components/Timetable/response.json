@@ -1,0 +1,64 @@
+{
+  "@context": "/contexts/user",
+  "@id": "/users/1ec4c4ea-445e-6976-832b-b9d2a785c599",
+  "@type": "user",
+  "courses": {
+    "0": {
+      "@type": "UECourse",
+      "@id": "_:2707",
+      "UE": {
+        "@id": "/ues/1ec4c4ea-7ae0-6242-9836-b9d2a785c599",
+        "@type": "ue",
+        "code": "SP52"
+      },
+      "day": "Monday",
+      "startHour": "1970-01-01T14:04:21+01:00",
+      "endHour": "1970-01-01T16:17:58+01:00",
+      "week": "A",
+      "type": "CM",
+      "room": "M012"
+    },
+    "6": {
+      "@type": "UECourse",
+      "@id": "_:3127",
+      "UE": {
+        "@id": "/ues/1ec4c4ea-7b4a-67aa-a0f7-b9d2a785c599",
+        "@type": "ue",
+        "code": "LT64"
+      },
+      "day": "Monday",
+      "startHour": "1970-01-01T18:42:04+01:00",
+      "endHour": "1970-01-01T01:53:52+01:00",
+      "type": "TD",
+      "room": "Q018"
+    },
+    "7": {
+      "@type": "UECourse",
+      "@id": "_:3162",
+      "UE": {
+        "@id": "/ues/1ec4c4ea-7aff-6192-bec2-b9d2a785c599",
+        "@type": "ue",
+        "code": "EA36"
+      },
+      "day": "Wednesday",
+      "startHour": "1970-01-01T08:42:27+01:00",
+      "endHour": "1970-01-01T23:32:28+01:00",
+      "type": "TD",
+      "room": "Internet"
+    },
+    "8": {
+      "@type": "UECourse",
+      "@id": "_:3196",
+      "UE": {
+        "@id": "/ues/1ec4c4ea-7b45-6782-98a9-b9d2a785c599",
+        "@type": "ue",
+        "code": "KJ25"
+      },
+      "day": "Friday",
+      "startHour": "1970-01-01T18:07:20+01:00",
+      "endHour": "1970-01-01T05:07:38+01:00",
+      "type": "TD",
+      "room": "P005"
+    }
+  }
+}

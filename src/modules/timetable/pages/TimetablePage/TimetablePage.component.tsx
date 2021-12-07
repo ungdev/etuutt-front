@@ -10,12 +10,8 @@ export const TimetablePage: FunctionComponent = () => {
   return (
     <>
     <h1 className="title">{t('page.timetable')}</h1>
-    
-    <h2 className="subtitle">{t('profile.subtitle.formation')}</h2>
 
     <Timetable studentNum="56677" ></Timetable>
-
-    <h2 className="subtitle">{t('profile.subtitle.association')}</h2>
     </>
   );
 

@@ -88,7 +88,46 @@ const sideBarDatas = [
             defaultOpenKeys={['sub1']}
             mode="inline"
           >
-            {sideBarDatas.map(({ title, path, icon, key }) => (
+
+            
+            <Menu.Item key="1" icon={<HomeOutlined/>}>
+              <a href=""/>{t('navbar.home')}
+            </Menu.Item>
+
+            <Menu.Item key="2" icon={<CalendarOutlined/>}>
+              <a href={PATHS.EVENT_PAGE.ROUTE}/>{t('navbar.events')}
+            </Menu.Item>
+
+            <Menu.Item key="3" icon={<BookOutlined/>}>
+              <a href={PATHS.COMMUNITY_LIFE_PAGE.ROUTE}/>{t('navbar.studentLife')}
+            </Menu.Item>
+
+            <SubMenu key="sub4" icon={<AppstoreAddOutlined/>} title="Services">
+              <Menu.ItemGroup key="g1" title={t("navbar.utilities")}>
+                <Menu.Item key="4"><a href={PATHS.ROOT_PAGE.ROUTE}/>{t("navbar.profile")}</Menu.Item>
+                <Menu.Item key="5">E-mail</Menu.Item>
+                <Menu.Item key="6">{t("navbar.ueguide")}</Menu.Item>
+                <Menu.Item key="7">{t("navbar.trombi")}</Menu.Item>
+                <Menu.Item key="8">Buck UTT</Menu.Item>
+                <Menu.Item key="9">How To</Menu.Item>
+              </Menu.ItemGroup>
+        
+            </SubMenu>
+
+            <Menu.Item key="10" icon={<TeamOutlined/>}>
+              <a href={PATHS.TEAM.ROUTE}/>{t("navbar.team")}
+            </Menu.Item>
+
+            <SubMenu key="sub11" icon={<FileProtectOutlined/>} title={t('navbar.parameters')}>
+              <Menu.ItemGroup key="g2" title={t('navbar.tools')}>
+                <Menu.Item key="11">{t("navbar.SIA")}</Menu.Item>
+                <Menu.Item key="12">{t("navbar.stateUNG")}</Menu.Item>
+                <Menu.Item key="13"><a href={PATHS.GDPR.ROUTE}/>{t("navbar.GDPR")}</Menu.Item>
+                <Menu.Item key="14"><a href={PATHS.BUG.ROUTE}/>{t("navbar.bug")}</Menu.Item>
+              </Menu.ItemGroup>
+            </SubMenu>
+
+            {/* {sideBarDatas.map(({ title, path, icon, key }) => (
             <>
             <SubMenu key={key} icon={icon} title={t(title)}>
               <Menu.ItemGroup key="g1" title="Item 1">
@@ -102,7 +141,7 @@ const sideBarDatas = [
             </SubMenu>
           
             </>
-            ))}
+            ))} */}
           </Menu>
         </div>
       );

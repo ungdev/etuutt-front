@@ -2,7 +2,16 @@
   "navbar.events": "Évènements",
   "navbar.home": "Accueil",
   "navbar.studentLife": "Vie Etudiante",
+  "navbar.utilities": "Utilitaires",
+  "navbar.profile": "Mon profil",
+  "navbar.ueguide": "Guide des UEs",
+  "navbar.trombi": "Trombinoscope",
   "navbar.team": "L'équipe",
+  "navbar.parameters": "Paramètres",
+  "navbar.tools": "Outils",
+  "navbar.SIA": "Mon Compte SIA",
+  "navbar.stateUNG": "Etat de service UNG",
+  "navbar.GDPR": "RGPD",
   "navbar.bug": "Signaler un bug",
 
   "profile.button1": "Voir mon profil public",
@@ -13,7 +22,7 @@
   "profile.subtitle.formation": "Ma formation",
   "profile.subtitle.association": "Mes associations",
 
-  "page.communityLife": "Mes associations",
+  "page.communityLife": "Les associations",
   "cummunityLife.moreInfo": "En savoir plus !",
 
   "page.profile": "Mon profil"

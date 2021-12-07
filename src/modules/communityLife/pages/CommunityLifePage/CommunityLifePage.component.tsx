@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Overlay } from '../../../../components/UI/Overlay';
 
-// import * as fileParsed from './response_1638889297437.json';
+import * as fileParsed from './response_1638889297437.json';
 
 var imageName = require("./BDE_logo.png")
 
@@ -29,7 +29,7 @@ export const CommunityLife: FunctionComponent = () => {
   const { t } = useTranslation();
 
 
-  // console.log(fileParsed['hydra:member']);
+  console.log(fileParsed['hydra:member']);
   
   return (
     <>

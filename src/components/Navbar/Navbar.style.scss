@@ -1,6 +1,14 @@
 
 @import './../../index.scss';
 
+.ant-menu-root.ant-menu-vertical, .ant-menu-root.ant-menu-vertical-left, .ant-menu-root.ant-menu-vertical-right, .ant-menu-root.ant-menu-inline {
+  width: 100% !important;
+}
+
+ul {
+  width: 100%;
+}
+
 .nav-text {
   display: flex;
   color: black;
@@ -29,7 +37,7 @@
 
 .header{
   max-width: 18%;
-  height: 100%;
+  height: 200%;
   align-items: center;
   display: flex;
   flex-direction: column;

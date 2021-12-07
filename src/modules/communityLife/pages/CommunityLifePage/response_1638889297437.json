@@ -1,0 +1,98 @@
+{
+  "@context": "/contexts/asso",
+  "@id": "/assos",
+  "@type": "hydra:Collection",
+  "hydra:member": [
+    {
+      "@id": "/assos/1ec4c4ea-c8c8-6798-90ac-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8c8-6798-90ac-b9d2a785c599",
+      "name": "qui nihil nemo",
+      "logo": "http://lorempixel.com/640/480/?43499"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8c9-65d0-8712-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8c9-65d0-8712-b9d2a785c599",
+      "name": "eum maiores inventore",
+      "logo": "http://lorempixel.com/640/480/?68175"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8ca-6278-91ed-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8ca-6278-91ed-b9d2a785c599",
+      "name": "eum nihil eos",
+      "logo": "http://lorempixel.com/640/480/?10364"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8cb-636c-9094-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8cb-636c-9094-b9d2a785c599",
+      "name": "corporis et aliquam",
+      "logo": "http://lorempixel.com/640/480/?50802"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8cc-6082-98f4-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8cc-6082-98f4-b9d2a785c599",
+      "name": "veniam inventore non",
+      "logo": "http://lorempixel.com/640/480/?57110"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8cc-6f1e-959f-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8cc-6f1e-959f-b9d2a785c599",
+      "name": "incidunt dolores in",
+      "logo": "http://lorempixel.com/640/480/?21273"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8ce-60bc-bbc4-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8ce-60bc-bbc4-b9d2a785c599",
+      "name": "quia non molestiae",
+      "logo": "http://lorempixel.com/640/480/?68464"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8cf-6106-a920-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8cf-6106-a920-b9d2a785c599",
+      "name": "nostrum dicta dignissimos",
+      "logo": "http://lorempixel.com/640/480/?70778"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8d0-6010-a8dc-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8d0-6010-a8dc-b9d2a785c599",
+      "name": "quod et at",
+      "logo": "http://lorempixel.com/640/480/?17364"
+    },
+    {
+      "@id": "/assos/1ec4c4ea-c8d0-6f4c-9f9f-b9d2a785c599",
+      "@type": "asso",
+      "id": "1ec4c4ea-c8d0-6f4c-9f9f-b9d2a785c599",
+      "name": "quia et quaerat",
+      "logo": "http://lorempixel.com/640/480/?18981"
+    }
+  ],
+  "hydra:totalItems": 40,
+  "hydra:view": {
+    "@id": "/assos?page=1",
+    "@type": "hydra:PartialCollectionView",
+    "hydra:first": "/assos?page=1",
+    "hydra:last": "/assos?page=4",
+    "hydra:next": "/assos?page=2"
+  },
+  "hydra:search": {
+    "@type": "hydra:IriTemplate",
+    "hydra:template": "/assos{?name}",
+    "hydra:variableRepresentation": "BasicRepresentation",
+    "hydra:mapping": [
+      {
+        "@type": "IriTemplateMapping",
+        "variable": "name",
+        "property": "name",
+        "required": false
+      }
+    ]
+  }
+}

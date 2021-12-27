@@ -4,7 +4,7 @@
   "navbar.studentLife": "Student Life",
   "navbar.utilities": "Utilities",
   "navbar.profile": "My profile",
-  "navbar.ueguide": "Guide des UEs",
+  "navbar.ueguide": "Courses guide",
   "navbar.trombi": "Trombinoscope",
   "navbar.team": "Team",
   "navbar.parameters": "Parameters",
@@ -16,6 +16,7 @@
 
   "inputResearchBox.research" : "Research",
 
+  "page.profile": "My profile",
   "profile.button1": "See my public profile",
   "profile.button2": "Edit", 
   "profile.studentNum": "Student's num",
@@ -25,8 +26,12 @@
   "profile.subtitle.association": "My community life",
   
   "page.communityLife": "The Community Life",
+  "communityLife.researchBox": "Research an association",
   "cummunityLife.moreInfo": "More info !",
 
-  "page.profile": "My profile"
+  "page.coursesGuide": "Courses Guide", 
+  "coursesGuide.researchBox": "Research a course",
+  "coursesGuide.categories": "Categories",
+  "coursesGuide.myCourses": "My courses"
   
 }

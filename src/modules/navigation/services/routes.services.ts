@@ -14,6 +14,9 @@ export const PATHS = {
   PROFILE: {
     ROUTE: '/profile',
   },
+  COURSES_GUIDE: {
+    ROUTE: '/guide_ues',
+  },
   SERVICES: {
     ROUTE: '/services',
   },

@@ -106,7 +106,7 @@ const sideBarDatas = [
               <Menu.ItemGroup key="g1" title={t("navbar.utilities")}>
                 <Menu.Item key="4"><a href={PATHS.PROFILE.ROUTE}/>{t("navbar.profile")}</Menu.Item>
                 <Menu.Item key="5">E-mail</Menu.Item>
-                <Menu.Item key="6">{t("navbar.ueguide")}</Menu.Item>
+                <Menu.Item key="6"><a href={PATHS.COURSES_GUIDE.ROUTE}>{t("navbar.ueguide")}</a></Menu.Item>
                 <Menu.Item key="7">{t("navbar.trombi")}</Menu.Item>
                 <Menu.Item key="8">Buck UTT</Menu.Item>
                 <Menu.Item key="9">How To</Menu.Item>

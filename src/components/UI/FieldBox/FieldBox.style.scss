@@ -1,0 +1,32 @@
+
+.containerFieldBox {
+
+  width: 100%;
+  margin: 0 2%;
+  text-align: center;
+
+
+  svg {
+    font-size: 2.2em;
+    margin-top: 0.6em;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  .FieldBox {
+    width: 8vw;
+    height: 8vw;
+    margin: 3em 0 0 3%;
+    padding: 10px;
+    float: left;
+    background-color: #FFF;
+    border-radius: 5px;
+  }
+}
+
+.clear {
+  clear: both;
+}
+

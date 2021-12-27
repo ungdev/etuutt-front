@@ -16,6 +16,7 @@
 
   "inputResearchBox.research" : "Rechercher",
 
+  "page.profile": "Mon profil",
   "profile.button1": "Voir mon profil public",
   "profile.button2": "Modifier", 
   "profile.studentNum": "Numéro étudiant",
@@ -25,7 +26,11 @@
   "profile.subtitle.association": "Mes associations",
 
   "page.communityLife": "Les associations",
+  "communityLife.researchBox": "Rechercher une association",
   "cummunityLife.moreInfo": "En savoir plus !",
 
-  "page.profile": "Mon profil"
+  "page.coursesGuide": "Guide des UEs",
+  "coursesGuide.researchBox": "Rechercher une UE",
+  "coursesGuide.categories": "Catégories",
+  "coursesGuide.myCourses": "Mes UEs"
 }

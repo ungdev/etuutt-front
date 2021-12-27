@@ -9,6 +9,7 @@ import { CommunityLife } from '../../../communityLife/pages';
 import { HomePage } from '../../../home/pages';
 import { ServicePage } from '../../../services/pages/ServicePage';
 import { ProfilePage } from '../../../profile/pages';
+import { CoursesGuidePage } from '../../../CoursesGuide/pages';
 import { TeamPage } from '../../../Team/pages/TeamPage';
 import { PATHS } from '../../services';
 
@@ -28,6 +29,9 @@ export const MainNavigator: FunctionComponent = () => {
           </Route>
           <Route exact path={PATHS.PROFILE.ROUTE}>
             <ProfilePage />
+          </Route>
+          <Route exact path={PATHS.COURSES_GUIDE.ROUTE}>
+            <CoursesGuidePage />
           </Route>
           <Route exact path={PATHS.SERVICES.ROUTE}>
             <ServicePage />

@@ -49,7 +49,7 @@ export const CommunityLife: FunctionComponent = () => {
     <>
     <h1 className="title">{t('page.communityLife')}</h1>
 
-    <InputResearchBox title={t("navbar.trombi")} size="largeResearchBox" description="BLA" placeholder="Charlotte Sarter" linkHrefResearch="" linkHrefGoTo="" linkNameGoTo="Aller à la page BLA" ></InputResearchBox>
+    <InputResearchBox title={t("communityLife.researchBox")} size="largeResearchBox" description="" placeholder="UNG" linkHrefResearch="" linkHrefGoTo="" linkNameGoTo="" ></InputResearchBox>
     
     <div className="containerOverlay">
       <Overlay name={associations[0].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[0].logo}></Overlay>

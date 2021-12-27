@@ -11,6 +11,9 @@ export const PATHS = {
   STUDENT_LIFE_PAGE: {
     ROUTE: '/vie_etudiante',
   },
+  PROFILE: {
+    ROUTE: '/profile',
+  },
   SERVICES: {
     ROUTE: '/services',
   },

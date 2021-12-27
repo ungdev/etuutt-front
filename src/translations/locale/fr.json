@@ -14,6 +14,8 @@
   "navbar.GDPR": "RGPD",
   "navbar.bug": "Signaler un bug",
 
+  "inputResearchBox.research" : "Rechercher",
+
   "profile.button1": "Voir mon profil public",
   "profile.button2": "Modifier", 
   "profile.studentNum": "Numéro étudiant",

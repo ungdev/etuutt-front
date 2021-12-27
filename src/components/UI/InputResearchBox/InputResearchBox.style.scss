@@ -1,0 +1,42 @@
+.researchBox {
+    position: relative;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    margin: 1.5em 5%;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 1em;
+
+    .submitResearchBox {
+        width: 90%;
+        margin: 0.5em 5%;
+    }
+
+    input {
+        margin-right: 20px;
+    }
+
+    [placeholder] {
+        border: #fff;
+        border-radius: 5px;
+        width: 80%;
+        padding: 5px 3px;
+        background-color: #F5F5F5;
+        color: grey;
+    }
+
+    a {
+        width: 100%;
+    }
+}
+
+.largeResearchBox {
+    width: 80%;
+}
+
+.smallResearchBox {
+    width: 60%;
+}

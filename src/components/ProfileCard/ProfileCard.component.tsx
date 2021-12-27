@@ -37,8 +37,8 @@ export const ProfileCard : FunctionComponent<ProfileCard> = ({name, mail, sex, p
                 <div className="profileCardItem">{birthDate}</div>
                 <div className="profileCardItem">{address}</div>
             </div>
-            <Button title={t("profile.button1")} size="small" onClick={() => console.log("You clicked on the first button!")}></Button> 
-            <Button title={t("profile.button2")} size="small" onClick={() => console.log("You clicked on the second button!")}></Button> 
+            <Button title={t("profile.button1")} size="small" typeOfButton="button" onClick={() => console.log("You clicked on the first button!")}></Button> 
+            <Button title={t("profile.button2")} size="small" typeOfButton="button" onClick={() => console.log("You clicked on the second button!")}></Button> 
         </>
 
     </div>

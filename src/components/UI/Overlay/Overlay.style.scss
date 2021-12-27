@@ -1,8 +1,14 @@
 
+.containerOverlay {
+  width: 100%;
+}
+
+
 .overlayBox {
   position: relative;
   width: 20%;
-  margin: 3em 0 0 5%;
+  margin: 3em 0 0 3.5%;
+  float: left;
 }
 
 .overlayBox img {
@@ -31,7 +37,7 @@
 
 .text {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   position: absolute;
   top: 50%;
   left: 50%;

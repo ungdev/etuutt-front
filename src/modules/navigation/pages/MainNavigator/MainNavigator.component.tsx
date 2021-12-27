@@ -8,7 +8,7 @@ import { GDPRPage } from '../../../GDPR/pages/GDPRPage';
 import { CommunityLife } from '../../../communityLife/pages';
 import { HomePage } from '../../../home/pages';
 import { ServicePage } from '../../../services/pages/ServicePage';
-import { StudentLifePage } from '../../../studentLife/pages';
+import { ProfilePage } from '../../../profile/pages';
 import { TeamPage } from '../../../Team/pages/TeamPage';
 import { PATHS } from '../../services';
 
@@ -26,8 +26,8 @@ export const MainNavigator: FunctionComponent = () => {
           <Route exact path={PATHS.EVENT_PAGE.ROUTE}>
             <EventPage />
           </Route>
-          <Route exact path={PATHS.STUDENT_LIFE_PAGE.ROUTE}>
-            <StudentLifePage />
+          <Route exact path={PATHS.PROFILE.ROUTE}>
+            <ProfilePage />
           </Route>
           <Route exact path={PATHS.SERVICES.ROUTE}>
             <ServicePage />

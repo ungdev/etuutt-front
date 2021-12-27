@@ -18,18 +18,18 @@ export const Overlay: FunctionComponent<Overlay> = ({ name, personInCharge, desc
   const { t } = useTranslation();
 
   return (
+      <div className="overlayBox">
+          {logoSrc && <img  src={logoSrc} alt={name} />}
+          <div className="overlayFilter">
+              <div className="text">
+                  <h3>{name}</h3>
+                  <div>Président : {personInCharge}</div>
+                  <div className="description_overlay">{description}</div>
+                  <Button title={t("cummunityLife.moreInfo")} size="small" typeOfButton="button" onClick={() => console.log("You clicked on the first button!")}>En savoir plus !</Button>
+              </div>
+          </div>
+      </div>
     
-    <div className="overlayBox">
-        {logoSrc && <img  src={logoSrc} alt={name} />}
-        <div className="overlayFilter">
-            <div className="text">
-                <h3>{name}</h3>
-                <div>Président : {personInCharge}</div>
-                <div className="description_overlay">{description}</div>
-                <Button title={t("cummunityLife.moreInfo")} size="small" onClick={() => console.log("You clicked on the first button!")}>En savoir plus !</Button>
-            </div>
-        </div>
-    </div>
     
 
   );

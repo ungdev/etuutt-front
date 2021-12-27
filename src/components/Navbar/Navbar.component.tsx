@@ -91,7 +91,7 @@ const sideBarDatas = [
 
             
             <Menu.Item key="1" icon={<HomeOutlined/>}>
-              <a href=""/>{t('navbar.home')}
+              <a href={PATHS.ROOT_PAGE.ROUTE}/>{t('navbar.home')}
             </Menu.Item>
 
             <Menu.Item key="2" icon={<CalendarOutlined/>}>
@@ -104,7 +104,7 @@ const sideBarDatas = [
 
             <SubMenu key="sub4" icon={<AppstoreAddOutlined/>} title="Services">
               <Menu.ItemGroup key="g1" title={t("navbar.utilities")}>
-                <Menu.Item key="4"><a href={PATHS.ROOT_PAGE.ROUTE}/>{t("navbar.profile")}</Menu.Item>
+                <Menu.Item key="4"><a href={PATHS.PROFILE.ROUTE}/>{t("navbar.profile")}</Menu.Item>
                 <Menu.Item key="5">E-mail</Menu.Item>
                 <Menu.Item key="6">{t("navbar.ueguide")}</Menu.Item>
                 <Menu.Item key="7">{t("navbar.trombi")}</Menu.Item>

@@ -6,11 +6,11 @@ export const StyleGuidePage: FunctionComponent = () => {
     <div>
       <h1>StyleGuide Page</h1>
       <h3>small button</h3>
-      <Button onClick={() => {}} title="Test" size="small" />
+      <Button onClick={() => {}} typeOfButton="button" title="Test" size="small" />
       <h3>medium button</h3>
-      <Button onClick={() => {}} title="Test" size="medium" />
+      <Button onClick={() => {}} typeOfButton="button" title="Test" size="medium" />
       <h3>large button</h3>
-      <Button onClick={() => {}} title="Test" size="large" />
+      <Button onClick={() => {}}  typeOfButton="button" title="Test" size="large" />
       <h3>Bagde UE</h3>
       <Badge onClick={() => {}} title="UE" />
     </div>

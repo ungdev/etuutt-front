@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { ProfileCard } from '../../../../components';
 import { InfoProfileBox } from '../../../../components';
 import { useTranslation } from 'react-i18next';
+import { AssoProfileBox } from '../../../../components/AssoProfileBox';
 
 var imageName = require("./baby_cat.jpg")
 
@@ -18,6 +19,8 @@ export const ProfilePage: FunctionComponent = () => {
     <InfoProfileBox studentNum="45 994" studentUes="LO02, GL02, IF37, LG03" formation="ISI1"></InfoProfileBox>
 
     <h2 className="subtitle">{t('profile.subtitle.association')}</h2>
+    <AssoProfileBox assoName="BDE" assoNum="1" assoPicture="" assoPosition="Vice-présidente"></AssoProfileBox>
+    <AssoProfileBox assoName="UNG" assoNum="1" assoPicture="" assoPosition="Membre"></AssoProfileBox>
     </>
   );
 

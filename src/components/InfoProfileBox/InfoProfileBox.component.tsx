@@ -3,8 +3,6 @@ import { useTranslation } from 'react-i18next';
 
 import './InfoProfileBox.style.scss';
 
-import { Button } from '../UI/Button';
-
 interface InfoProfileBox {
     studentNum: string;
     studentUes: string;

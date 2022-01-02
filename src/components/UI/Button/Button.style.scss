@@ -1,29 +1,36 @@
+@import './../../../variables.scss';
+
 .button {
-  background-color: #0e63a1;
+  background-color: #ffffff;
   border-radius: 10px;
+  border-color: $primary-blue-color;
+  transition-duration: 20ms;
   &:hover {
-    background-color: #008eca;
+    background-color: $primary-blue-color;
+    color: white;
+    transition-duration: 20ms;
   }
-  font-weight: 600;
-  color: white;
+  font-weight: 400;
+  color: $primary-blue-color;
+  overflow: hidden;
 }
 .button-small {
   width: 78px;
   height: 48px;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 18px;
 }
 .button-medium {
-  width: 156px;
-  height: 48px;
-  font-size: 16px;
+  width: 120px;
+  height: 45px;
+  font-size: 1.2em;
   line-height: 24px;
 }
 
 .button-large {
   width: 195px;
   height: 60px;
-  font-size: 20px;
+  font-size: 1.5em;
   line-height: 26px;
 }
 

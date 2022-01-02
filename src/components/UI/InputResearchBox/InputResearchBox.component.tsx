@@ -28,7 +28,7 @@ export const InputResearchBox: FunctionComponent<InputResearchBox> = ({ title, s
         <p>{description}</p>
         <form className="submitResearchBox">
           <input placeholder={placeholder}></input>
-          <Button size="small" typeOfButton="submit" onClick={() => console.log("You clicked on the first button!")} title={t("inputResearchBox.research")} ></Button>
+          <Button size="medium" typeOfButton="submit" onClick={() => console.log("You clicked on the first button!")} title={t("inputResearchBox.research")} ></Button>
         </form>
         <a href={linkHrefGoTo}>{linkNameGoTo}</a>
 

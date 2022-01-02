@@ -52,16 +52,16 @@ export const CommunityLife: FunctionComponent = () => {
     <InputResearchBox title={t("communityLife.researchBox")} size="largeResearchBox" description="" placeholder="UNG" linkHrefResearch="" linkHrefGoTo="" linkNameGoTo="" ></InputResearchBox>
     
     <div className="containerOverlay">
-      <Overlay name={associations[0].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[0].logo}></Overlay>
-      <Overlay name={associations[1].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[1].logo}></Overlay>
-      <Overlay name={associations[2].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[2].logo}></Overlay>
-      <Overlay name={associations[3].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[3].logo}></Overlay>
-      <Overlay name={associations[4].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[4].logo}></Overlay>
-      <Overlay name={associations[5].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[5].logo}></Overlay>
-      <Overlay name={associations[6].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[6].logo}></Overlay>
-      <Overlay name={associations[7].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[7].logo}></Overlay>
-      <Overlay name={associations[8].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[8].logo}></Overlay>
-      <Overlay name={associations[9].name} personInCharge="Emile Rey" description="La meilleure asso" logoSrc={associations[9].logo}></Overlay>
+      <Overlay name={associations[0].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[0].logo}></Overlay>
+      <Overlay name={associations[1].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[1].logo}></Overlay>
+      <Overlay name={associations[2].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[2].logo}></Overlay>
+      <Overlay name={associations[3].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[3].logo}></Overlay>
+      <Overlay name={associations[4].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[4].logo}></Overlay>
+      <Overlay name={associations[5].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[5].logo}></Overlay>
+      <Overlay name={associations[6].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[6].logo}></Overlay>
+      <Overlay name={associations[7].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[7].logo}></Overlay>
+      <Overlay name={associations[8].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[8].logo}></Overlay>
+      <Overlay name={associations[9].name} personInCharge="Anakin Skywalker" description="Description" logoSrc={associations[9].logo}></Overlay>
     </div>
 
     </>

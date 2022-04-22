@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Button } from '../Button';
-import './Button.style.scss';
+import './Card.style.scss';
 
 interface CardProps {
   title: string;
@@ -9,7 +9,7 @@ interface CardProps {
   onClick: () => void;
 }
 
-export const Catd: FunctionComponent<CardProps> = ({ title, description, logo, onClick }) => {
+export const Card: FunctionComponent<CardProps> = ({ title, description, logo, onClick }) => {
   return (
     <div className="card">
       <img src={logo} />
@@ -17,14 +17,8 @@ export const Catd: FunctionComponent<CardProps> = ({ title, description, logo, o
         <div className="card-text">
           <p className="card-title">{title}</p>
           <p className="card-describe">{description}</p>
+          <Button title={'Savoir Plus'} size={'small'} onClick={onClick} />
         </div>
-        <Button
-          title={'Savoir Plus'}
-          size={'small'}
-          onClick={function (): void {
-            throw new Error('Function not implemented.');
-          }}
-        />
       </div>
     </div>
   );

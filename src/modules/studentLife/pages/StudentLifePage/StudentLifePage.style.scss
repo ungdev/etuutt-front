@@ -1,0 +1,11 @@
+.card-container {
+    padding-top: 10em ;
+    padding-bottom: 3em;
+  }
+  
+  .card-grid {
+    padding-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }

@@ -5,7 +5,6 @@ import { PATHS } from '../../modules/navigation/services';
 import './Navbar.style.scss';
 import { NavbarLink } from './NavbarLink.components';
 
-const TAILLE_IMG = 64;
 const sideBarLink = [
   <NavbarLink name={'Accueil'} link={PATHS.ROOT_PAGE.ROUTE} icon={'bx bx-home'} subItems={'0'} />,
   <NavbarLink

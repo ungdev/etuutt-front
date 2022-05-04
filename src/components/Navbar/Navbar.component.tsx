@@ -1,69 +1,130 @@
-import React, { FunctionComponent } from 'react';
+/* eslint-disable react/jsx-key */
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { PATHS } from '../../modules/navigation/services';
-import city from './../../assets/city-hall.png';
-import home from './../../assets/home.png';
-import logo from './../../assets/logo.png';
-import timetable from './../../assets/timetable.png';
-import rgpd from './../../assets/protection.png';
-import services from './../../assets/menu.png';
-import equipe from './../../assets/team.png';
-import bug from './../../assets/careful.png';
 import './Navbar.style.scss';
+import { NavbarLink } from './NavbarLink.components';
 
-const TAILLE_IMG = 64;
-const sideBarDatas = [
-  {
-    title: 'navbar.home',
-    path: PATHS.ROOT_PAGE.ROUTE,
-    image: home,
-  },
-  {
-    title: 'navbar.events',
-    path: PATHS.EVENT_PAGE.ROUTE,
-    image: timetable,
-  },
-  {
-    title: 'navbar.studentLife',
-    path: PATHS.STUDENT_LIFE_PAGE.ROUTE,
-    image: city,
-  },
-  {
-    title: 'Services',
-    path: PATHS.SERVICES.ROUTE,
-    image: services,
-  },
-  {
-    title: "L'équipe",
-    path: PATHS.TEAM.ROUTE,
-    image: equipe,
-  },
-  {
-    title: 'RGPD',
-    path: PATHS.GDPR.ROUTE,
-    image: rgpd,
-  },
-  {
-    title: 'Signaler un bug',
-    path: PATHS.BUG.ROUTE,
-    image: bug,
-  },
+const sideBarLink = [
+  <NavbarLink name={'Accueil'} link={PATHS.ROOT_PAGE.ROUTE} icon={'bx bx-home'} subItems={'0'} />,
+  <NavbarLink
+    name={'Evenements'}
+    link={PATHS.EVENT_PAGE.ROUTE}
+    icon={'bx bx-calendar'}
+    subItems={'0'}
+  />,
+  <NavbarLink
+    name={'Services'}
+    link={undefined}
+    icon={'bx bx-grid-alt'}
+    subItems={[
+      {
+        subItemName: 'Profil',
+        subItemLink: '/profil',
+      },
+      {
+        subItemName: 'Email',
+        subItemLink: '/email',
+      },
+      {
+        subItemName: 'Profil',
+        subItemLink: '/guide des UEs',
+      },
+      {
+        subItemName: 'Trombinoscope',
+        subItemLink: '/trombinoscope',
+      },
+      {
+        subItemName: 'Buck UTT',
+        subItemLink: '/profil',
+      },
+      {
+        subItemName: 'Wiki',
+        subItemLink: '/wiki',
+      },
+    ]}
+  />,
+  <NavbarLink name={'Equipe'} link={'/equipe'} icon={'bx bx-group'} subItems={'0'} />,
+  <NavbarLink
+    name={'Paramètres'}
+    link={undefined}
+    icon={'bx bx-collection'}
+    subItems={[
+      {
+        subItemName: 'SIA',
+        subItemLink: '/sia',
+      },
+      {
+        subItemName: 'Status UNG',
+        subItemLink: '/status',
+      },
+      {
+        subItemName: 'RGPD',
+        subItemLink: '/rgpd',
+      },
+      {
+        subItemName: 'Signaler un Bug',
+        subItemLink: '/bug',
+      },
+    ]}
+  />,
 ];
 
 export const Navbar: FunctionComponent = () => {
   const { t } = useTranslation();
+  const [isClose, setIsClose] = useState(window.innerWidth < 1200);
+  useEffect(() => {
+    window.addEventListener(
+      'resize',
+      () => {
+        const isclose = window.innerWidth < 1200;
+        if (isclose !== isClose) setIsClose(isclose);
+      },
+      false
+    );
+  }, [isClose]);
+
+  useEffect(() => {
+    const arrow = document.querySelectorAll('.arrow');
+    for (let i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener('click', (e) => {
+        const target = e.target as HTMLElement;
+        if (target.parentElement != null) {
+          if (target.parentElement.parentElement != null) {
+            const arrowParent = target.parentElement.parentElement; //selecting main parent of arrow
+            arrowParent.classList.toggle('showMenu');
+          }
+        }
+      });
+    }
+  });
+
+  useEffect(() => {
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarBtn = document.querySelector('.bx-menu');
+    if (sidebarBtn != null) {
+      sidebarBtn.addEventListener('click', () => {
+        if (sidebar != null) {
+          sidebar.classList.toggle('close');
+        }
+      });
+    }
+  });
 
   return (
-    <div className="header">
-      <img className="etu-logo" src={logo}></img>
-      <nav>
-        {sideBarDatas.map(({ title, path, image }) => (
-          <a key={title} href={path} className="nav-text">
-            <img className="nav-logo" src={image} height={TAILLE_IMG} width={TAILLE_IMG} />
-            <span>{t(title)}</span>
-          </a>
-        ))}
-      </nav>
-    </div>
+    <>
+      <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"></link>
+      <div className={`${isClose ? 'sidebar close' : 'sidebar'}`}>
+        <div className="logo-details">
+          <span className="logo_name">LOGO</span>
+        </div>
+        <ul className="nav-links">{sideBarLink}</ul>
+      </div>
+      <section className="home-section">
+        <div className="home-content">
+          <i className="bx bx-menu"></i>
+        </div>
+      </section>
+    </>
   );
 };

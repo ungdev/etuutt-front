@@ -9,7 +9,7 @@ const requestAPI = <T>(
   method: Method,
   baseURL: string,
   route: string,
-  authorizationHeader: boolean,
+  casLogin: string | undefined,
   body?: T | undefined,
   disableCache?: boolean
 ) =>
@@ -19,12 +19,15 @@ const requestAPI = <T>(
       .request<T>({
         baseURL,
         method,
-        headers: authorizationHeader
+        headers: casLogin
           ? {
-              Authorization: token ? `Bearer ${token}` : '',
+              accept: 'application/ld+json',
+              'CAS-LOGIN': casLogin,
             }
-          : {},
-        url: route + (disableCache ? '?nocache=' + new Date().getTime() : ''),
+          : {
+              accept: 'application/ld+json',
+            },
+        url: route,
         data: body,
         timeout: 5000,
       })
@@ -49,11 +52,14 @@ export const setAuthorizationToken = (_token: string) => {
 
 // Access the API through different HTTP methods
 export const API = {
-  get: <T>(route: string) => requestAPI<T>('GET', apiUrl(), route, true),
-  post: <T>(route: string, body: T | undefined) =>
-    requestAPI<T>('POST', apiUrl(), route, true, body),
-  put: <T>(route: string, body: T | undefined) => requestAPI<T>('PUT', apiUrl(), route, true, body),
-  patch: <T>(route: string, body: T | undefined) =>
-    requestAPI<T>('PATCH', apiUrl(), route, true, body),
-  delete: <T>(route: string) => requestAPI<T>('DELETE', apiUrl(), route, true),
+  get: <T>(route: string, casLogin: string | undefined) =>
+    requestAPI<T>('GET', apiUrl(), route, casLogin),
+  post: <T>(route: string, casLogin: string | undefined, body: T | undefined) =>
+    requestAPI<T>('POST', apiUrl(), route, casLogin, body),
+  put: <T>(route: string, casLogin: string | undefined, body: T | undefined) =>
+    requestAPI<T>('PUT', apiUrl(), route, casLogin, body),
+  patch: <T>(route: string, casLogin: string | undefined, body: T | undefined) =>
+    requestAPI<T>('PATCH', apiUrl(), route, casLogin, body),
+  delete: <T>(route: string, casLogin: string | undefined) =>
+    requestAPI<T>('DELETE', apiUrl(), route, casLogin),
 };

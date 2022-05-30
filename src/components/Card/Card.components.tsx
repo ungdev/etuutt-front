@@ -13,12 +13,10 @@ export const Card: FunctionComponent<CardProps> = ({ title, description, logo, o
   return (
     <div className="card">
       <img src={logo} />
-      <div className="card-info">
-        <div className="card-text">
-          <p className="card-title">{title}</p>
-          <p className="card-describe">{description}</p>
-          <Button title={'Savoir Plus'} size={'small'} onClick={onClick} />
-        </div>
+      <div className="info">
+        <h1 className="title">{title}</h1>
+        <p className="describe">{description}</p>
+        <Button title={'Savoir Plus'} size={'small'} onClick={onClick} />
       </div>
     </div>
   );

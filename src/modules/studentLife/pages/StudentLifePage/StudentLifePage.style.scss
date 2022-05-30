@@ -14,16 +14,7 @@ Card{
   position: relative;
   margin: auto;
 }
-@media (max-width: 1500px) {
-  .card-container {
-    padding-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  Card {
-    padding-bottom: 5em;
-  }
-}
+
 /**** Mobile *****/
 @media (max-width: 960px) {
   .card-container{

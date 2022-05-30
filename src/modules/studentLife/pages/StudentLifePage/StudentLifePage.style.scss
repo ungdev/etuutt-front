@@ -1,0 +1,24 @@
+.card-container {
+  padding-top: 3em;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: normal;
+}
+.card-grid{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+Card{
+  position: relative;
+  margin: auto;
+}
+
+/**** Mobile *****/
+@media (max-width: 960px) {
+  .card-container{
+    padding-top: 3em;
+    grid-template-columns: 1fr;
+  }
+}

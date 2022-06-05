@@ -14,57 +14,63 @@ const sideBarLink = [
     subItems={'0'}
   />,
   <NavbarLink
+    name={'Vie Etudiant'}
+    link={PATHS.STUDENT_LIFE_PAGE.ROUTE}
+    icon={'bx bxs-school'}
+    subItems={'0'}
+  />,
+  <NavbarLink
     name={'Services'}
-    link={undefined}
+    link={PATHS.SERVICES.ROUTE}
     icon={'bx bx-grid-alt'}
     subItems={[
       {
         subItemName: 'Profil',
-        subItemLink: '/profil',
+        subItemLink: PATHS.PROFILE.ROUTE,
       },
       {
         subItemName: 'Email',
-        subItemLink: '/email',
+        subItemLink: PATHS.EMAIL.ROUTE,
       },
       {
-        subItemName: 'Profil',
-        subItemLink: '/guide des UEs',
+        subItemName: 'Guide des UEs',
+        subItemLink: PATHS.GUIDE_UE.ROUTE,
       },
       {
         subItemName: 'Trombinoscope',
-        subItemLink: '/trombinoscope',
+        subItemLink: PATHS.TROMBINOSCOPE.ROUTE,
       },
       {
         subItemName: 'Buck UTT',
-        subItemLink: '/profil',
+        subItemLink: PATHS.BUCKUTT.ROUTE,
       },
       {
         subItemName: 'Wiki',
-        subItemLink: '/wiki',
+        subItemLink: PATHS.WIKI.ROUTE,
       },
     ]}
   />,
-  <NavbarLink name={'Equipe'} link={'/equipe'} icon={'bx bx-group'} subItems={'0'} />,
+  <NavbarLink name={'Equipe'} link={PATHS.TEAM.ROUTE} icon={'bx bx-group'} subItems={'0'} />,
   <NavbarLink
     name={'Paramètres'}
-    link={undefined}
+    link={PATHS.SETTING.ROUTE}
     icon={'bx bx-collection'}
     subItems={[
       {
         subItemName: 'SIA',
-        subItemLink: '/sia',
+        subItemLink: PATHS.SIA.ROUTE,
       },
       {
         subItemName: 'Status UNG',
-        subItemLink: '/status',
+        subItemLink: PATHS.STATUS_UNG.ROUTE,
       },
       {
         subItemName: 'RGPD',
-        subItemLink: '/rgpd',
+        subItemLink: PATHS.GDPR.ROUTE,
       },
       {
         subItemName: 'Signaler un Bug',
-        subItemLink: '/bug',
+        subItemLink: PATHS.BUG.ROUTE,
       },
     ]}
   />,

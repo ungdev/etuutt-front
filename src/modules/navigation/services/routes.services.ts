@@ -11,8 +11,35 @@ export const PATHS = {
   SERVICES: {
     ROUTE: '/services',
   },
+  PROFILE: {
+    ROUTE: '/profil',
+  },
+  EMAIL: {
+    ROUTE: '/eimal',
+  },
+  GUIDE_UE: {
+    ROUTE: '/guides_des_ues',
+  },
+  TROMBINOSCOPE: {
+    ROUTE: '/trombinoscope',
+  },
+  BUCKUTT: {
+    ROUTE: '/buckutt',
+  },
+  WIKI: {
+    ROUTE: '/wiki',
+  },
   TEAM: {
     ROUTE: '/equipe',
+  },
+  SETTING: {
+    ROUTE: '/parametre',
+  },
+  SIA: {
+    ROUTE: '/sia',
+  },
+  STATUS_UNG: {
+    ROUTE: '/status_ung',
   },
   GDPR: {
     ROUTE: '/rgpd',

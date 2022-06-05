@@ -9,7 +9,7 @@ interface ItemProps {
 }
 interface SubItemsProps {
   subItemName: string;
-  subItemLink: string;
+  subItemLink: string | undefined;
 }
 export const NavbarLink: FunctionComponent<ItemProps> = ({ name, link, icon, subItems }) => {
   if (typeof subItems != 'string') {

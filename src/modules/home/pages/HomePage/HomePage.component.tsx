@@ -6,7 +6,7 @@ export const HomePage: FunctionComponent = () => {
   const fetchUsers = async () => {
     const res = await API.get(`/users`, 'admin');
   };
-  // Fetch the tournaments once, after the first render
+  // Fetch the users once, after the first render
   useEffect(() => {
     if (!user) {
       fetchUsers();
